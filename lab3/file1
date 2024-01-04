@@ -1,0 +1,46 @@
+package labTwo;
+
+public class One {
+    // Приватні змінні
+    private int variableOne;
+    private double variableTwo;
+    private String variableThree;
+
+    // Конструктор
+    public One(int variableOne, double variableTwo, String variableThree) {
+        this.variableOne = variableOne;
+        this.variableTwo = variableTwo;
+        this.variableThree = variableThree;
+    }
+
+    // Геттери та сеттери
+    public int getVariableOne() {
+        return variableOne;
+    }
+
+    public void setVariableOne(int variableOne) {
+        this.variableOne = variableOne;
+    }
+
+    public double getVariableTwo() {
+        return variableTwo;
+    }
+
+    public void setVariableTwo(double variableTwo) {
+        this.variableTwo = variableTwo;
+    }
+
+    public String getVariableThree() {
+        return variableThree;
+    }
+
+    public void setVariableThree(String variableThree) {
+        this.variableThree = variableThree;
+    }
+
+    // Метод з логікою використання змінних інших класів
+    public void methodWithOtherClassVariable(Two otherClass) {
+        int value = otherClass.getVariableOne();
+        System.out.println("Value from other class: " + value);
+    }
+}
