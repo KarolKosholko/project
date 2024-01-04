@@ -1,0 +1,17 @@
+package labOne;
+
+public class MainClass {
+    public static void main(String[] args) {
+        // Створення екземплярів класів
+        One objOne = new One(10, 3.14, "Hello");
+        Two objTwo = new Two();  
+        Three objThree = new Three();
+
+        // Виклик перевизначеного методу
+        objOne.overriddenMethod(5.5);
+
+        // Виклик статичного методу
+        Two.staticMethod(20);
+        // Аналогічні виклики для інших класів
+    }
+}
