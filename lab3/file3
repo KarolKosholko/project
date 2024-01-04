@@ -1,0 +1,24 @@
+package labTwo;
+
+public class Two {
+    private int privateVariable;
+
+    // Геттер та сеттер для приватної змінної
+    public int getPrivateVariable() {
+        return privateVariable;
+    }
+
+    public void setPrivateVariable(int privateVariable) {
+        this.privateVariable = privateVariable;
+    }
+
+    // Закритий метод
+    private void privateMethod() {
+        System.out.println("Private Method in class Two");
+    }
+
+    // Допоміжний метод для виклику закритого методу
+    public void callPrivateMethod() {
+        privateMethod();
+    }
+}
