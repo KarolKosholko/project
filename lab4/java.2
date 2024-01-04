@@ -1,0 +1,19 @@
+public class One {
+    void methodOne() {
+        System.out.println("method one does something");
+    }
+}
+
+public class Two extends One {
+    void methodTwo() {
+        methodOne();
+        System.out.println("method two does something");
+    }
+}
+
+public class Three extends Two {
+    void methodThree() {
+        methodOne();
+        System.out.println("method three does something");
+    }
+}
