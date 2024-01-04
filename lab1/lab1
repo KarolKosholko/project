@@ -1,1 +1,28 @@
+// One.java
+package labOne;
+
+public class One {
+    private int variableOne;
+    private double variableTwo;
+    private String variableThree;
+
+    // Конструктор
+    public One(int var1, double var2, String var3) {
+        this.variableOne = var1;
+        this.variableTwo = var2;
+        this.variableThree = var3;
+    }
+
+    // Void-метод
+    public void voidMethod() {
+        // Логіка void-методу
+        System.out.println("Void method in class One");
+    }
+
+    // Типізований метод
+    public int typedMethod(int parameter) {
+        // Логіка типізованого методу
+        return variableOne * parameter;
+    }
+}
 
