@@ -1,1 +1,19 @@
+public class Four extends Two {
+    void methodFour() {
+        methodTwo();
+        System.out.println("method four does something");
+    }
 
+    void test() {
+        FourDemo fd = new FourDemo();
+        fd.methodFourDemo();
+    }
+
+    // Вкладений клас
+    class FourDemo {
+        void methodFourDemo() {
+            System.out.println("method fourDemo does something");
+            methodFour();
+        }
+    }
+}
