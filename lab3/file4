@@ -1,0 +1,23 @@
+package labTwo;
+
+public class AdditionalClass {
+    // Статичні змінні
+    private static int staticVariableOne = 5;
+    private static double staticVariableTwo;
+
+    // Статичний блок ініціалізації
+    static {
+        staticVariableTwo = 2.5;
+    }
+
+    // Перший статичний метод
+    public static void firstStaticMethod() {
+        System.out.println("First Static Method. Variables: " + staticVariableOne + ", " + staticVariableTwo);
+    }
+
+    // Другий статичний метод
+    public static void secondStaticMethod() {
+        System.out.println("Second Static Method. Result of the first method: ");
+        firstStaticMethod();
+    }
+}
