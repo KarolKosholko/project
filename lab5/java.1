@@ -1,0 +1,15 @@
+// Замість:
+class SubClass extends SuperClass {
+    void someMethod() {
+        someVariable = 10;
+        someMethodFromSuper();
+    }
+}
+
+// Використовуйте:
+class SubClass extends SuperClass {
+    void someMethod() {
+        super.someVariable = 10;
+        super.someMethodFromSuper();
+    }
+}
