@@ -1,0 +1,31 @@
+public class AdditionalClass {
+    // Завершені (final) змінні екземплярів класу
+    private final int finalVariable1;
+    private final String finalVariable2;
+    private final double finalVariable3;
+
+    // Конструктор для ініціалізації завершених змінних
+    public AdditionalClass(int finalVariable1, String finalVariable2, double finalVariable3) {
+        this.finalVariable1 = finalVariable1;
+        this.finalVariable2 = finalVariable2;
+        this.finalVariable3 = finalVariable3;
+    }
+
+    // Перший метод, що використовує завершені змінні екземпляра
+    public void useFinalVariables() {
+        System.out.println("Using finalVariable1: " + finalVariable1);
+        System.out.println("Using finalVariable2: " + finalVariable2);
+        System.out.println("Using finalVariable3: " + finalVariable3);
+    }
+
+    // Другий метод, що використовує локальні завершені змінні
+    public void useLocalFinalVariables() {
+        final int localFinalVariable1 = 10;
+        final String localFinalVariable2 = "LocalVariable";
+        final double localFinalVariable3 = 3.14;
+
+        System.out.println("Using localFinalVariable1: " + localFinalVariable1);
+        System.out.println("Using localFinalVariable2: " + localFinalVariable2);
+        System.out.println("Using localFinalVariable3: " + localFinalVariable3);
+    }
+}
