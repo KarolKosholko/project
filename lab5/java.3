@@ -1,0 +1,18 @@
+final public class FinalClass {
+    // Логіка класу FinalClass
+}
+
+public class ExampleClass extends FinalClass { // Помилка компіляції: неможливо наслідуватися від "final" класу
+    // Логіка класу ExampleClass
+}
+
+public class SomeClass {
+    final void finalMethod() {
+        // Логіка методу finalMethod
+    }
+}
+
+public class AnotherClass extends SomeClass {
+    // Неможливо перевизначити final метод
+    // Помилка компіляції
+}
