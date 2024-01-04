@@ -1,0 +1,13 @@
+public class DynamicDispatch {
+    void executeDynamicDispatch(One oneObject) {
+        oneObject.overriddenMethod();
+        // Інші методи із класу One
+    }
+
+    void executeDynamicDispatch(Two twoObject) {
+        twoObject.overriddenMethod();
+        // Інші методи із класу Two
+    }
+
+    // Аналогічно реалізуйте для інших класів у ієрархії
+}
