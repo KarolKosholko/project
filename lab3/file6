@@ -1,0 +1,12 @@
+public class MainClass {
+    public static void main(String[] args) {
+        // Створення об'єкта додаткового класу
+        AdditionalClass additionalObject = new AdditionalClass(5, "Hello", 2.5);
+
+        // Виклик методу, що використовує завершені змінні екземпляра
+        additionalObject.useFinalVariables();
+
+        // Виклик методу, що використовує локальні завершені змінні
+        additionalObject.useLocalFinalVariables();
+    }
+}
