@@ -1,0 +1,17 @@
+package labOne;
+
+public class One {
+    // інші члени класу залишаються незмінними
+
+    // Рекурсивний метод
+    public void recursiveMethod(int iterations) {
+        // Умова виходу з рекурсії
+        if (iterations <= 0) {
+            return;
+        }
+
+        // Логіка рекурсивного виклику
+        System.out.println("Recursive method in class One. Iteration: " + iterations);
+        recursiveMethod(iterations - 1);
+    }
+}
