@@ -1,0 +1,14 @@
+package labOne;
+
+public class MainClass {
+    public static void main(String[] args) {
+        // Створення екземплярів класів
+        One objOne = new One(10, 3.14, "Hello");
+        Two objTwo = new Two();  
+        Three objThree = new Three();
+
+        // Виклик рекурсивного методу
+        objOne.recursiveMethod(3);
+        // Аналогічні виклики для інших класів
+    }
+}
